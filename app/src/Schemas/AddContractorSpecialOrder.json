@@ -1,0 +1,53 @@
+{
+  "Order Information": {
+    "q34341": {
+      "type": "TextInput",
+      "label": "Order Number",
+      "required": true,
+      "dbid": "orderNumber",
+      "validationType": "string"
+    },
+    "q343": {
+      "type": "TextInput",
+      "label": "Order Name",
+      "required": true,
+      "dbid": "orderName",
+      "validationType": "string"
+    },
+    "q3r3": {
+      "type": "MultiChoice",
+      "label": "Order Type",
+      "dbid": "orderType",
+      "required": true,
+      "options": ["Invoice", "Incoming Credit Note", "Outgoing Credit Note", "Invoice Correction"]
+    },
+    "q33r": {
+      "type": "DatabaseMultiChoice",
+      "label": "Company",
+      "dbid": "company",
+      "required": true,
+      "method": "getCompanys"
+    },
+    "234s3242": {
+      "type": "DatabaseMultiChoice",
+      "label": "Client",
+      "required": false,
+      "dbid": "client",
+      "method": "getClients"
+    },
+    "23416s3242": {
+      "type": "AssignmentNotice",
+      "label": "Assignment Notice",
+      "required": false,
+      "dbid": "assignmentNotice",
+      "method": "getAssignmentNotice"
+    },
+    "q5ii6": {
+      "type": "TextInput",
+      "label": "Credit Note Number",
+      "required": true,
+      "dbid": "creditNoteNumber",
+      "validationType": "string"
+    }
+  }
+}

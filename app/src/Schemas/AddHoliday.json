@@ -1,0 +1,121 @@
+{
+  "Holiday Information": {
+    "q1": {
+      "type": "DatePicker",
+      "label": "Date",
+      "required": true,
+      "readOnly": false,
+      "dbid": "holidayDate"
+    },
+    "q4": {
+      "type": "TextInput",
+      "label": "Description",
+      "required": true,
+      "readOnly": false,
+      "dbid": "description",
+      "validationType": "string"
+    },
+    "q325": {
+      "type": "CheckBox",
+      "label": "Berlin",
+      "required": false,
+      "dbid": "berlin"
+    },
+    "q326": {
+      "type": "CheckBox",
+      "label": "Bavaria",
+      "required": false,
+      "dbid": "bavaria"
+    },
+    "q327": {
+      "type": "CheckBox",
+      "label": "Bremen",
+      "required": false,
+      "dbid": "bremen"
+    },
+    "q328": {
+      "type": "CheckBox",
+      "label": "Hesse",
+      "required": false,
+      "dbid": "hesse"
+    },
+    "q329": {
+      "type": "CheckBox",
+      "label": "Mecklenburg-Vorpommern",
+      "required": false,
+      "dbid": "mecklenburgVorpommern"
+    },
+    "q330": {
+      "type": "CheckBox",
+      "label": "Rhineland-Palatinate",
+      "required": false,
+      "dbid": "rhinelandPalatinate"
+    },
+    "q331": {
+      "type": "CheckBox",
+      "label": "Saxony",
+      "required": false,
+      "dbid": "saxony"
+    },
+    "q332": {
+      "type": "CheckBox",
+      "label": "Schleswig-Holstein",
+      "required": false,
+      "dbid": "schleswigHolstein"
+    },
+    "q333": {
+      "type": "CheckBox",
+      "label": "Foreign",
+      "required": false,
+      "dbid": "foreign"
+    },
+    "q334": {
+      "type": "CheckBox",
+      "label": "Baden-Wurttemberg",
+      "required": false,
+      "dbid": "badenWurttemberg"
+    },
+    "q335": {
+      "type": "CheckBox",
+      "label": "Bradenburg",
+      "required": false,
+      "dbid": "bradenburg"
+    },
+    "q336": {
+      "type": "CheckBox",
+      "label": "Hamburg",
+      "required": false,
+      "dbid": "hamburg"
+    },
+    "q337": {
+      "type": "CheckBox",
+      "label": "Lower Saxony",
+      "required": false,
+      "dbid": "lowerSaxony"
+    },
+    "q338": {
+      "type": "CheckBox",
+      "label": "North Rhine-Westphalia",
+      "required": false,
+      "dbid": "northRhineWestphalia"
+    },
+    "q339": {
+      "type": "CheckBox",
+      "label": "Saarland",
+      "required": false,
+      "dbid": "saarland"
+    },
+    "q340": {
+      "type": "CheckBox",
+      "label": "Saxony-Anhalt",
+      "required": false,
+      "dbid": "saxonyAnhalt"
+    },
+    "q341": {
+      "type": "CheckBox",
+      "label": "Thuringia",
+      "required": false,
+      "dbid": "thuringia"
+    }
+  }
+}

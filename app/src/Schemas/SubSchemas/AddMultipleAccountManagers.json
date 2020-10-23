@@ -1,0 +1,20 @@
+{
+  "Account Manager Details": {
+    "q16": {
+      "type": "DatabaseMultiChoice",
+      "label": "Account Manager Name",
+      "required": true,
+      "method": "getAccountManagers",
+      "dbid": "accountManagerName"
+    },
+    "q17": {
+      "type": "TextInput",
+      "label": "Account Manager Phone Number",
+      "required": true,
+      "readOnly": false,
+      "dbid": "accountManagerNumber",
+      "placeholder": "+49",
+      "validationType": "mobilephone"
+    }
+  }
+}

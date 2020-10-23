@@ -1,0 +1,248 @@
+{
+  "Basic Data": {
+    "q2": {
+      "type": "PaymentStopMultiChoice",
+      "label": "Payment Stop",
+      "required": true,
+      "default": "Nothing",
+      "dbid": "paymentStop",
+      "options": [
+        "Nothing",
+        "Bankruptcy",
+        "Seizure",
+        "Credit",
+        "Payment block",
+        "Tax number is missing",
+        "Contract missing",
+        "Vehicle rental",
+        "Other(see remark)"
+      ]
+    },
+    "q3": {
+      "type": "TextInput",
+      "label": "Alias",
+      "required": true,
+      "readOnly": false,
+      "dbid": "alias"
+    },
+    "q4": {
+      "type": "TextInput",
+      "label": "Name1",
+      "required": true,
+      "readOnly": false,
+      "dbid": "name1"
+    },
+    "q5": {
+      "type": "TextInput",
+      "label": "Name2",
+      "required": false,
+      "readOnly": false,
+      "dbid": "name2"
+    },
+    "q0picsdsdkddk6": {
+      "type": "LocationPicker",
+      "label": "Address",
+      "required": true,
+      "readOnly": false,
+      "dbid": "address"
+    },
+    "q6": {
+      "type": "TextInput",
+      "label": "Street",
+      "required": true,
+      "readOnly": false,
+      "dbid": "street"
+    },
+    "q7": {
+      "type": "TextInput",
+      "label": "House number",
+      "required": true,
+      "readOnly": false,
+      "dbid": "houseNumber"
+    },
+    "q8": {
+      "type": "TextInput",
+      "label": "Zipcode",
+      "required": true,
+      "readOnly": false,
+      "dbid": "zipcode"
+    },
+    "q9": {
+      "type": "TextInput",
+      "label": "City",
+      "required": true,
+      "readOnly": false,
+      "dbid": "city"
+    },
+    "q10": {
+      "type": "MultiChoice",
+      "label": "State",
+      "required": true,
+      "options": [
+        "Berlin",
+        "Baden-Wurttemberg",
+        "Bavaria",
+        "Bradenburg",
+        "Bremen",
+        "Hamburg",
+        "Hesse",
+        "Lower Saxony",
+        "Mecklenburg-Vorpomern",
+        "North Rhine-Westphalia",
+        "Rhineland-Palatinate",
+        "Saarland",
+        "Saxony",
+        "Saxony-Anhalt",
+        "Schleswig-Holstein",
+        "Thuringia",
+        "Foreign"
+      ],
+      "dbid": "state"
+    },
+    "q11": {
+      "type": "TextInput",
+      "label": "Phone 1",
+      "required": false,
+      "readOnly": false,
+      "dbid": "phone1",
+      "placeholder": "+49"
+    },
+    "sdsg33aasdasdq18": {
+      "type": "MultiPhoneNumber",
+      "label": "Mobile",
+      "required": false,
+      "dbid": "mobile",
+      "placeholder": "+49"
+    },
+    "q14": {
+      "type": "TextInput",
+      "label": "Fax",
+      "required": false,
+      "readOnly": false,
+      "dbid": "fax"
+    },
+    "q15": {
+      "type": "TextInput",
+      "label": "Email",
+      "required": false,
+      "readOnly": false,
+      "dbid": "email"
+    }
+  },
+  "Contract Data": {
+    "q18": {
+      "type": "InvoiceDeliveryMethod",
+      "label": "Invoice Delivery Method",
+      "required": false,
+      "dbid": "invoiceDeliveryMethod",
+      "options": ["Email", "Mail"],
+      "emailLabel": "Invoice Email",
+      "emailDbid": "invoiceEmail"
+    },
+    "q19": {
+      "type": "MultiChoice",
+      "label": "Invoice Type",
+      "required": true,
+      "options": ["Invoice", "Credit Note"],
+      "dbid": "invoiceType"
+    },
+    "q26": {
+      "type": "CheckboxPrefillTextField",
+      "checkboxLabel": "Vat Mandatory",
+      "checkboxDbid": "vatMandatory",
+      "textFieldLabel": "VAT Ex. 19%",
+      "textFieldDbid": "vat",
+      "required": true,
+      "preFill": 19,
+      "validationType": "number"
+    },
+    "q199": {
+      "type": "MultiChoice",
+      "label": "Billing Cycle",
+      "required": true,
+      "options": ["Weekly", "Monthly", "14 Days", "Daily"],
+      "dbid": "billingCycle"
+    },
+    "q20": {
+      "type": "PaymentCycleMultiChoice",
+      "label": "Payment Cycle",
+      "required": true,
+      "options": ["Immediately", "10-net", "14 net", "30 net", "Upfront", "Other"],
+      "dbid": "paymentCycle",
+      "daysLabel": "Days",
+      "daysDbid": "days"
+    },
+    "q34": {
+      "type": "TextInput",
+      "label": "Tax Identification Number",
+      "required": false,
+      "dbid": "taxID",
+      "validationType": "string"
+    },
+    "q35": {
+      "type": "TextInput",
+      "label": "National Tax Number",
+      "required": false,
+      "dbid": "nationalTaxID",
+      "validationType": "string"
+    },
+    "q21": {
+      "type": "DatePicker",
+      "label": "Commercial Date",
+      "required": false,
+      "dbid": "commercialDate"
+    },
+    "q29": {
+      "type": "MultiChoice",
+      "label": "Currency",
+      "required": true,
+      "default": "EUR",
+      "options": ["EUR", "CHF", "DKK", "USD"],
+      "dbid": "currency"
+    },
+
+    "q23433": {
+      "type": "TerminationTimeMultiChoice",
+      "label": "Termination Time",
+      "required": true,
+      "options": ["2 days", "14 days", "30 days", "Other"],
+      "dbid": "terminationTime",
+      "daysLabel": "Termination Days",
+      "daysDbid": "terminationDays"
+    }
+  },
+  "Banking Details": {
+    "q": {
+      "type": "Multi",
+      "multiType": "BankingDetails",
+      "entityType": "Banking Details",
+      "dbid": "bankingDetails"
+    }
+  },
+  "Bankruptcy Details": {
+    "q1": {
+      "type": "TextInput",
+      "label": "Bankaccount liquidator",
+      "dbid": "bankruptcyBankaccountLiquidator",
+      "validationType": "string"
+    },
+    "q2": {
+      "type": "TextInput",
+      "label": "Account holder",
+      "dbid": "bankruptcyAccountHolder",
+      "validationType": "string"
+    },
+    "q3": {
+      "type": "TextInput",
+      "label": "Bank Name",
+      "dbid": "bankruptcyBankName",
+      "validationType": "string"
+    },
+    "q4/5": {
+      "type": "IbanTextInput",
+      "label": "Bankruptcy IBAN",
+      "dbid": "bankruptcyIban",
+      "validationType": "iban"
+    }
+  }
+}

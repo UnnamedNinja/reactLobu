@@ -1,0 +1,20 @@
+{
+  "Add Group": {
+    "q4": {
+      "type": "TextInput",
+      "label": "Name",
+      "required": true,
+      "readOnly": false,
+      "dbid": "groupName",
+      "validationType": "string"
+    },
+    "q325": {
+      "type": "DatabaseMultiChoice",
+      "label": "Company",
+      "required": true,
+      "readOnly": false,
+      "method": "getCompanys",
+      "dbid": "company"
+    }
+  }
+}

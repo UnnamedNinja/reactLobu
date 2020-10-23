@@ -1,0 +1,72 @@
+{
+  "Article Information": {
+    "q1": {
+      "type":"TextInput",
+      "label": "Article-No",
+      "required": false,
+      "readOnly": false,
+      "dbid":"articleNumber",
+      "validationType": "string"
+    },
+    "q4": {
+      "type":"TextInput",
+      "label": "Description",
+      "required": true,
+      "readOnly": false,
+      "dbid":"description",
+      "validationType": "string"
+    },
+    "q325": {
+      "type":"TextInput",
+      "label": "Client Price",
+      "required": false,
+      "readOnly": false,
+      "dbid":"clientPrice",
+      "validationType": "price"
+    },
+    "q56": {
+      "type":"TextInput",
+      "label": "Contractor Price",
+      "required": false,
+      "readOnly": false,
+      "dbid":"contractorPrice",
+      "validationType": "price"
+    },
+    "q3": {
+      "type":"DatabaseMultiChoice",
+      "label":"Group",
+      "required": true,
+      "method":"getGroups",
+      "dbid":"group"
+    },
+    "q6": {
+      "type":"TextInput",
+      "label": "Purchasing Price",
+      "required": false,
+      "readOnly": false,
+      "dbid":"purchasingPrice",
+      "validationType": "price"
+    },
+    "q39": {
+      "type":"MultiChoice",
+      "label":"Calculation",
+      "required": false,
+      "options":[
+        "Percentage",
+        "Fee per day",
+        "Fee per Month",
+        "Fee per unit",
+        "None"
+      ],
+      "dbid":"calculation"
+    },
+    "q96": {
+      "type":"TextInput",
+      "label": "Value",
+      "required": false,
+      "readOnly": false,
+      "dbid":"value",
+      "validationType": "price"
+    }
+  }
+}

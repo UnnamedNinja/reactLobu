@@ -1,0 +1,92 @@
+{
+  "q327": {
+    "type": "DatabaseMultiChoice",
+    "label": "Company",
+    "required": true,
+    "method": "getCompanys",
+    "dbid": "company"
+  },
+  "q0": {
+    "type": "DatabaseMultiMultiCheckboxChoice",
+    "label": "Assignment notice",
+    "required": true,
+    "method": "getCompanysFullNames",
+    "dbid": "assignmentNotice"
+  },
+  "q30": {
+    "type": "DatabaseMultiChoice",
+    "label": "Company Bank",
+    "required": true,
+    "method": "getCompanysFullNames",
+    "dbid": "companyBank"
+  },
+  "q255": {
+    "type": "TextInput",
+    "label": "Debitor Number",
+    "required": true,
+    "readOnly": false,
+    "dbid": "debitorNumber",
+      "validationType": "string"
+  },
+  "q25": {
+    "type": "TextInput",
+    "label": "Creditor Number",
+    "required": true,
+    "readOnly": false,
+    "dbid": "creditorNumber",
+      "validationType": "string"
+  },
+  "q3003": {
+    "type": "TextInput",
+    "label": "Client number at contractor",
+    "required": true,
+    "dbid": "clientNumberAtContractor",
+      "validationType": "string"
+  },
+  "q39981": {
+    "type": "IbanTextInput",
+    "label": "IBAN",
+    "required": true,
+    "dbid": "iban",
+      "validationType": "iban"
+  },
+
+  "q326": {
+    "type": "TextInput",
+    "label": "Bank",
+    "required": true,
+    "dbid": "bank",
+      "validationType": "string"
+  },
+  "q219": {
+    "type": "DatePicker",
+    "label": "Last Billed",
+    "required": false,
+    "dbid": "lastBilled"
+  },
+  "q221": {
+    "type": "FileChooser",
+    "label": "Contract file",
+    "required": false,
+    "dbid": "contractFile"
+  },
+  "q2419": {
+    "type": "DatePicker",
+    "label": "Contract Start Date",
+    "required": true,
+    "dbid": "contractStartDate"
+  },
+  "q299": {
+    "type": "DatePicker",
+    "label": "Contract End Date",
+    "required": true,
+    "dbid": "contractEndDate"
+  },
+  "q2645": {
+    "type": "CheckBox",
+    "label": "Contract OK",
+    "required": true,
+    "readOnly": false,
+    "dbid": "contractOK"
+  }
+}

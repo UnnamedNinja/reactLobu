@@ -1,0 +1,31 @@
+{
+    "Datumsauswahl": {
+        "toggleCalendar": "Kalender umschalten"
+    },
+    "Kalender": {
+        "heute": "heute"
+    },
+    "Dateneingabe": {
+        "Inkrement": "Inkrement",
+        "Dekrement": "Dekrement"
+    },
+    "datetimepicker": {
+        "Datum datum": "Datum",
+        "Zeit Zeit": "Zeit",
+        "Abbrechen": "Abbrechen",
+        "set": "Set"
+    },
+    "Zeitmesser": {
+        "set": "Set",
+        "Abbrechen": "Abbrechen",
+        "jetzt jetzt": "Jetzt",
+        "selectNow": "Jetzt auswählen",
+        "toggleTimeSelector": "Zeitauswahl umschalten",
+        "toggleClock": "Uhr umschalten"
+    },
+    "daterangepicker": {
+        "swapStartEnd": "Start- und Endwerte tauschen",
+        "start": "Start",
+        "Ende": "Ende"
+    }
+}

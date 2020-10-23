@@ -1,0 +1,51 @@
+{
+  "Add Bank": {
+    "q4": {
+      "type": "TextInput",
+      "label": "Bank Name",
+      "required": true,
+      "readOnly": false,
+      "dbid": "bankName",
+      "validationType": "string"
+    },
+    "q325": {
+      "type": "TextInput",
+      "label": "Bank Description",
+      "required": true,
+      "readOnly": false,
+      "dbid": "bankDescription",
+      "validationType": "string"
+    },
+    "q56": {
+      "type": "TextInput",
+      "label": "Account Number",
+      "required": true,
+      "readOnly": false,
+      "dbid": "accountNumber",
+      "validationType": "string"
+    },
+    "q6": {
+      "type": "TextInput",
+      "label": "Bank Code",
+      "required": true,
+      "readOnly": false,
+      "dbid": "bankCode",
+      "validationType": "string"
+    },
+    "097hhq31": {
+      "type": "IbanTextInput",
+      "label": "IBAN",
+      "required": true,
+      "dbid": "iban",
+      "validationType": "iban"
+    },
+    "q2342w96": {
+      "type": "DatabaseMultiChoice",
+      "label": "Company",
+      "required": true,
+      "readOnly": false,
+      "method": "getCompanys",
+      "dbid": "company"
+    }
+  }
+}

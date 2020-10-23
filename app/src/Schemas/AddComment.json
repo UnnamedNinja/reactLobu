@@ -1,0 +1,12 @@
+{
+  "Comments": {
+    "q1": {
+      "type": "Comment",
+      "label": "Comments",
+      "required": false,
+      "readOnly": false,
+      "dbid": "comments",
+      "validationType": "string"
+    }
+  }
+}

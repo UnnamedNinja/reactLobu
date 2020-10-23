@@ -1,0 +1,201 @@
+{
+  "Order Information": {
+    "q34341": {
+      "type": "OrderNumberTextInput",
+      "label": "OrderNumber",
+      "required": true,
+      "readOnly": true,
+      "dbid": "orderNumber",
+      "validationType": "string"
+    },
+    "q1": {
+      "type": "TextInput",
+      "label": "Order Name",
+      "required": true,
+      "dbid": "orderName",
+      "validationType": "string"
+    },
+    "q3r3": {
+      "type": "MultiChoice",
+      "label": "Order Type",
+      "required": true,
+      "options": [
+        "Night Fee",
+        "Day Fee",
+        "Saturday Fee",
+        "Day Tour",
+        "Night Tour",
+        "Vehicle Rental",
+        "Property Leasing",
+        "Consulting",
+        "Dispatcher"
+      ],
+      "dbid": "orderType"
+    },
+    "q33r": {
+      "type": "DatabaseMultiChoice",
+      "label": "Company",
+      "required": true,
+      "method": "getCompanys",
+      "dbid": "company"
+    },
+    "q33": {
+      "type": "MultiChoice",
+      "label": "Invoice Type",
+      "required": false,
+      "options": ["Invoice", "Credit Note"],
+      "dbid": "invoiceType"
+    }
+  },
+  "Pricing Details": {
+    "q4": {
+      "type": "MultiChoice",
+      "label": "Price Basis",
+      "required": true,
+      "readOnly": false,
+      "options": ["Fixed", "Month", "14 days", "Day", "Stop", "Hour"],
+      "dbid": "priceBasis"
+    },
+    "q206": {
+      "type": "CheckBox",
+      "label": "Once per billing",
+      "required": false,
+      "dbid": "isOncePerBilling"
+    },
+    "q326": {
+      "type": "CheckBox",
+      "label": "No customer invoice",
+      "required": false,
+      "dbid": "noCustomerInvoice"
+    },
+    "q286": {
+      "type": "CheckBox",
+      "label": "Fuel Fee",
+      "required": false,
+      "dbid": "isFuelFee"
+    },
+    "q21": {
+      "type": "DatePicker",
+      "label": "Valid From",
+      "required": true,
+      "dbid": "validFrom"
+    },
+    "q215": {
+      "type": "DatePicker",
+      "label": "Date of Expiry",
+      "required": false,
+      "dbid": "dateOfExpiry"
+    },
+    "q43s": {
+      "type": "TextInput",
+      "label": "Start",
+      "dbid": "start",
+      "validationType": "string"
+    },
+    "q4343s": {
+      "type": "TextInput",
+      "label": "Duration",
+      "dbid": "duration",
+      "validationType": "string"
+    },
+    "q47743s": {
+      "type": "TextInput",
+      "label": "Km/day",
+      "dbid": "kmPerDay",
+      "validationType": "string"
+    },
+    "qres333": {
+      "type": "MultiChoice",
+      "label": "Fuel Type",
+      "required": false,
+      "options": ["1", "2", "3", "4", "5"],
+      "dbid": "fuelType"
+    },
+    "q039res333": {
+      "type": "MultiChoice",
+      "label": "Vehicle Size",
+      "required": false,
+      "options": ["S", "M", "L"],
+      "dbid": "vehicleSize"
+    },
+    "q43t44442s3s": {
+      "type": "TextInput",
+      "label": "Number Of Departures",
+      "dbid": "numberOfDepartures",
+      "validationType": "string"
+    },
+    "v433t44442s3s": {
+      "type": "TextInput",
+      "label": "Departure Times",
+      "dbid": "departureTimes",
+      "validationType": "string"
+    },
+    "v433092384jdkasldjs3s": {
+      "type": "MultiPerson",
+      "label": "MultiPerson",
+      "dbid": "multiperson"
+    }
+  },
+  "Associated Parties": {
+    "fdddf": {
+      "type": "DatabaseMultiChoice",
+      "label": "Client",
+      "dbid": "client",
+      "method": "getClients"
+    },
+    "234ssdsds3242": {
+      "type": "ContractorHistory",
+      "label": "Contractor",
+      "dbid": "contractor",
+      "method": "getContractors"
+    },
+    "s3223442": {
+      "type": "DatabaseMultiChoice",
+      "label": "Article",
+      "dbid": "article",
+      "method": "getArticles"
+    },
+    "23416s3242": {
+      "type": "AssignmentNotice",
+      "label": "Assignment Notice",
+      "dbid": "assignmentNotice",
+      "method": "getAssignmentNotice"
+    },
+    "q56e": {
+      "type": "PriceHistory",
+      "label": "Client Price Week",
+      "required": true,
+      "dbid": "clientPriceWeek"
+    },
+    "q56sde": {
+      "type": "PriceHistory",
+      "label": "Client Price Weekend",
+      "required": true,
+      "dbid": "clientPriceWeekend"
+    },
+    "q5ii6": {
+      "type": "PriceHistory",
+      "label": "Contractor Price Week",
+      "required": false,
+      "dbid": "contractorPriceWeek"
+    },
+    "q56": {
+      "type": "PriceHistory",
+      "label": "Contractor Price Weekend",
+      "required": false,
+      "dbid": "contractorPriceWeekend"
+    },
+    "qee215": {
+      "type": "DatePicker",
+      "label": "Contractor Valid From",
+      "required": false,
+      "dbid": "contractorValidFrom"
+    },
+    "qeii215": {
+      "type": "DatePicker",
+      "label": "Contractor Date of Expiry",
+      "required": false,
+      "dbid": "contractorDateOfExpiry"
+    }
+  }
+}

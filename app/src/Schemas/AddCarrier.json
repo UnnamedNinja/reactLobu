@@ -1,0 +1,216 @@
+{
+  "Basic Data": {
+    "q4": {
+      "type": "TextInput",
+      "label": "Name1",
+      "required": true,
+      "readOnly": false,
+      "dbid": "name1"
+    },
+    "q5": {
+      "type": "TextInput",
+      "label": "Name2",
+      "required": false,
+      "readOnly": false,
+      "dbid": "name2"
+    },
+    "q6": {
+      "type": "TextInput",
+      "label": "Street",
+      "required": true,
+      "readOnly": false,
+      "dbid": "street"
+    },
+    "q7": {
+      "type": "TextInput",
+      "label": "House number",
+      "required": true,
+      "readOnly": false,
+      "dbid": "houseNumber"
+    },
+    "q8": {
+      "type": "TextInput",
+      "label": "Zipcode",
+      "required": true,
+      "readOnly": false,
+      "dbid": "zipcode"
+    },
+    "q9": {
+      "type": "TextInput",
+      "label": "City",
+      "required": true,
+      "readOnly": false,
+      "dbid": "city"
+    },
+    "q10": {
+      "type": "MultiChoice",
+      "label": "State",
+      "required": true,
+      "options": [
+        "Berlin",
+        "Baden-Wurttemberg",
+        "Bavaria",
+        "Bradenburg",
+        "Bremen",
+        "Hamburg",
+        "Hesse",
+        "Lower Saxony",
+        "Mecklenburg-Vorpomern",
+        "North Rhine Westphalia",
+        "Rhineland-Palatinate",
+        "Saarland",
+        "Saxony",
+        "Saxony-Anhalt",
+        "Schleswig-Holstein",
+        "Thuringia",
+        "Foreign"
+      ],
+      "dbid": "state"
+    },
+    "q11": {
+      "type": "TextInput",
+      "label": "Phone 1",
+      "required": true,
+      "readOnly": false,
+      "dbid": "phone1"
+    },
+    "q12": {
+      "type": "TextInput",
+      "label": "Phone 2",
+      "required": true,
+      "readOnly": false,
+      "dbid": "phone2"
+    },
+    "q13": {
+      "type": "TextInput",
+      "label": "Mobile",
+      "required": true,
+      "readOnly": false,
+      "dbid": "mobile"
+    },
+    "q14": {
+      "type": "TextInput",
+      "label": "Fax",
+      "required": true,
+      "readOnly": false,
+      "dbid": "fax"
+    },
+    "q15": {
+      "type": "TextInput",
+      "label": "Email",
+      "required": true,
+      "readOnly": false,
+      "dbid": "email"
+    }
+  },
+  "Contract Data": {
+    "q20": {
+      "type": "MultiChoice",
+      "label": "Payment Terms",
+      "options": ["Immediately", "10-net", "14 net", "30 net", "Upfront", "Other"],
+      "required": true,
+      "dbid": "paymentTerms"
+    },
+
+    "q28864": {
+      "type": "InvoiceDeliveryMethod",
+      "label": "Invoice Delivery Method",
+      "emailLabel": "Invoice Email",
+      "options": ["Email", "Mail"],
+      "required": true,
+      "dbid": "invoiceDeliveryMethod",
+      "emailDbid": "invoiceEmail"
+    },
+    "q84844824": {
+      "type": "MultiChoice",
+      "label": "Choose Document Language",
+      "required": true,
+      "options": ["English", "German"],
+      "dbid": "documentLanguage"
+    },
+    "q20774": {
+      "type": "MultiChoice",
+      "label": "Basis For Invoice",
+      "required": true,
+      "options": ["Standard", "Weightslip from Source", "Weightslip from Processor"],
+      "dbid": "basisForInvoice"
+    },
+    "q3kkj80": {
+      "type": "TextInput",
+      "label": "Efact Nr",
+      "required": true,
+      "dbid": "eFact"
+    }
+  },
+
+  "Banking and Billing Details": {
+    "q25": {
+      "type": "TextInput",
+      "label": "Debitor Number",
+      "required": true,
+      "readOnly": false,
+      "dbid": "debitorNumber",
+      "validationType": "string"
+    },
+    "q29": {
+      "type": "MultiChoice",
+      "label": "Currency",
+      "options": ["EUR", "CHF", "DKK", "USD"],
+      "required": true,
+      "dbid": "currency"
+    },
+    "q26": {
+      "type": "CheckboxPrefillTextField",
+      "checkboxLabel": "Vat Mandatory",
+      "checkboxDbid": "vatMandatory",
+      "textFieldLabel": "VAT Ex. 19%",
+      "textFieldDbid": "vat",
+      "required": true,
+      "preFill": 19,
+      "validationType": "number"
+    },
+
+    "q31": {
+      "type": "IbanTextInput",
+      "label": "IBAN",
+      "required": true,
+      "dbid": "iban",
+      "validationType": "iban"
+    },
+    "q32": {
+      "type": "TextInput",
+      "label": "BIC",
+      "required": true,
+      "dbid": "bic",
+      "validationType": "bic"
+    },
+    "q33": {
+      "type": "TextInput",
+      "label": "Client number at client",
+      "required": true,
+      "dbid": "clientNumberAtClient",
+      "validationType": "string"
+    },
+    "q34": {
+      "type": "TextInput",
+      "label": "Tax Identification Number",
+      "required": true,
+      "dbid": "taxID",
+      "validationType": "string"
+    },
+    "q35": {
+      "type": "TextInput",
+      "label": "National Tax Number",
+      "required": true,
+      "dbid": "nationalTaxID",
+      "validationType": "string"
+    },
+    "q36": {
+      "type": "TextInput",
+      "label": "Vendor number",
+      "required": true,
+      "dbid": "vendorNumber",
+      "validationType": "string"
+    }
+  }
+}

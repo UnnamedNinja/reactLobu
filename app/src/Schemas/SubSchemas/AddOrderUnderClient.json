@@ -1,0 +1,194 @@
+{
+  "Order Information": {
+    "q34341": {
+      "type": "TextInput",
+      "label": "OrderNumber",
+      "required": true,
+      "dbid": "orderNumber",
+      "validationType": "string"
+    },
+    "q1": {
+      "type": "TextInput",
+      "label": "Order Name",
+      "required": true,
+      "dbid": "orderName",
+      "validationType": "string"
+    },
+    "q3r3": {
+      "type": "MultiChoice",
+      "label": "Order Type",
+      "required": true,
+      "options": [
+        "Night Fee",
+        "Day Fee",
+        "Saturday Fee",
+        "Day Tour",
+        "Night Tour",
+        "Vehicle Rental",
+        "Property Leasing",
+        "Consulting",
+        "Dispatcher"
+      ],
+      "dbid": "orderType"
+    },
+    "q33r": {
+      "type": "DatabaseMultiChoice",
+      "label": "Company",
+      "required": true,
+      "method": "getCompanys",
+      "dbid": "company"
+    },
+    "q33": {
+      "type": "MultiChoice",
+      "label": "Invoice",
+      "required": true,
+      "options": ["Invoice", "Credit Note"],
+      "dbid": "invoice"
+    }
+  },
+  "Pricing Details": {
+    "q4": {
+      "type": "TextInput",
+      "label": "Price Basis",
+      "required": true,
+      "readOnly": false,
+      "dbid": "priceBasis",
+      "validationType": "string"
+    },
+    "q206": {
+      "type": "CheckBox",
+      "label": "Once per billing",
+      "required": true,
+      "dbid": "isOncePerBilling"
+    },
+    "q326": {
+      "type": "CheckBox",
+      "label": "No customer invoice",
+      "required": true,
+      "dbid": "noCustomerInvoice"
+    },
+    "q286": {
+      "type": "CheckBox",
+      "label": "Fuel Fee",
+      "required": true,
+      "dbid": "isFuelFee"
+    },
+    "q21": {
+      "type": "DatePicker",
+      "label": "Valid From",
+      "required": true,
+      "dbid": "validFrom"
+    },
+    "q215": {
+      "type": "DatePicker",
+      "label": "Date of Expiry",
+      "required": true,
+      "dbid": "dateOfExpiry"
+    },
+    "q43s": {
+      "type": "TextInput",
+      "label": "Start",
+      "dbid": "start",
+      "validationType": "string"
+    },
+    "q4343s": {
+      "type": "TextInput",
+      "label": "Duration",
+      "dbid": "duration",
+      "validationType": "string"
+    },
+    "q47743s": {
+      "type": "TextInput",
+      "label": "Km/day",
+      "dbid": "kmPerDay",
+      "validationType": "string"
+    },
+    "qres333": {
+      "type": "MultiChoice",
+      "label": "Fuel Type",
+      "required": true,
+      "options": ["1", "2", "3", "4", "5"],
+      "dbid": "fuelType"
+    },
+    "q039res333": {
+      "type": "MultiChoice",
+      "label": "Vehicle Size",
+      "required": true,
+      "options": ["S", "M", "L"],
+      "dbid": "vehicleSize"
+    },
+    "q43t44442s3s": {
+      "type": "TextInput",
+      "label": "Number Of Departures",
+      "dbid": "numberOfDepartures",
+      "validationType": "string"
+    },
+    "v433t44442s3s": {
+      "type": "TextInput",
+      "label": "Departure Times",
+      "dbid": "departureTimes",
+      "validationType": "string"
+    }
+  },
+
+  "Associated Parties": {
+    "234s3242": {
+      "type": "DatabaseMultiChoice",
+      "label": "Contractor",
+      "dbid": "contractor",
+      "method": "getContractors"
+    },
+    "s3223442": {
+      "type": "DatabaseMultiChoice",
+      "label": "Article",
+      "dbid": "article",
+      "method": "getArticles"
+    },
+    "23416s3242": {
+      "type": "DatabaseMultiChoice",
+      "label": "Assignment Notice",
+      "dbid": "assignmentNotice",
+      "method": "getAssignmentNotice"
+    },
+    "q5ii6": {
+      "type": "TextInput",
+      "label": "Contractor Price Week",
+      "required": true,
+      "dbid": "contractorPriceWeek",
+      "validationType": "price"
+    },
+    "q56": {
+      "type": "TextInput",
+      "label": "Contractor Price Week",
+      "required": true,
+      "dbid": "contractorPriceWeek",
+      "validationType": "price"
+    },
+    "q56e": {
+      "type": "TextInput",
+      "label": "Client Price Weekend",
+      "required": true,
+      "dbid": "clientPriceWeekend",
+      "validationType": "price"
+    },
+    "q56sde": {
+      "type": "TextInput",
+      "label": "Client Price Weekend",
+      "required": true,
+      "dbid": "clientPriceWeekend",
+      "validationType": "price"
+    },
+    "qee215": {
+      "type": "DatePicker",
+      "label": "Contractor Valid From",
+      "required": true,
+      "dbid": "contractorValidFrom"
+    },
+    "qeii215": {
+      "type": "DatePicker",
+      "label": "Contractor Date of Expiry",
+      "required": true,
+      "dbid": "contractorDateOfExpiry"
+    }
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "WS+ Information": {
+    "q1": {
+      "type": "DatabaseMultiChoice",
+      "label": "Articles",
+      "required": true,
+      "method": "getArticles",
+      "dbid": "articles"
+    },
+    "q2": {
+      "type": "DatePicker",
+      "label": "Source: Weight Slip Date",
+      "required": true,
+      "dbid": "sourceWSDate"
+    },
+    "q3": {
+      "type": "TextInput",
+      "label": "Source: Weight Slip Number",
+      "required": true,
+      "dbid": "sourceWSNumber",
+      "validationType": "string"
+    },
+    "q4": {
+      "type": "TextInput",
+      "label": "Source: weight",
+      "required": true,
+      "dbid": "sourceWeight",
+      "validationType": "string"
+    },
+    "q5": {
+      "type": "TextInput",
+      "label": "Source: Price",
+      "required": true,
+      "dbid": "sourcePrice",
+      "validationType": "price"
+    },
+    "q6": {
+      "type": "MultiChoice",
+      "label": "Currency",
+      "required": true,
+      "default":"EUR",
+      "options": ["EUR", "USD"],
+      "dbid": "sourceCurrency"
+    },
+    "q7": {
+      "type": "MultiChoice",
+      "label": "Unit",
+      "required": true,
+      "options": ["tons", "kg"],
+      "dbid": "sourceUnit"
+    },
+    "q8": {
+      "type": "TextInput",
+      "require": true,
+      "label": "Source Amount",
+      "dbid": "sourceAmount",
+      "validationType": "number"
+    },
+    "q9": {
+      "type": "MultiChoice",
+      "label": "Packaging Unit",
+      "required": true,
+      "options": ["Bales", "Packing Units"],
+      "dbid": "sourcePackagingUnit"
+    },
+    "q10": {
+      "type": "TextInput",
+      "label": "Source: Deviating article name",
+      "dbid": "sourceDeviatingArticleName",
+      "validationType": "string"
+    },
+    "q11": {
+      "type": "TextInput",
+      "label": "Source: Condition",
+      "dbid": "sourceDeviatingArticleName",
+      "validationType": "string"
+    },
+    "q12": {
+      "type": "DatePicker",
+      "label": "Processor: Weight Slip Date",
+      "required": true,
+      "dbid": "sourceWSDate"
+    },
+    "q13": {
+      "type": "TextInput",
+      "label": "Processor: Weight Slip Number",
+      "required": true,
+      "dbid": "processorWSNumber",
+      "validationType": "string"
+    },
+    "q14": {
+      "type": "TextInput",
+      "label": "Processor: weight",
+      "required": true,
+      "dbid": "processorWeight",
+      "validationType": "string"
+    },
+    "q15": {
+      "type": "TextInput",
+      "label": "Processor: Price",
+      "required": true,
+      "dbid": "processorPrice",
+      "validationType": "price"
+    },
+    "q16": {
+      "type": "MultiChoice",
+      "label": "Currency",
+      "required": true,
+      "default":"EUR",
+      "options": ["EUR", "USD"],
+      "dbid": "processorCurrency"
+    },
+    "q17": {
+      "type": "MultiChoice",
+      "label": "Unit",
+      "required": true,
+      "options": ["tons", "kg"],
+      "dbid": "processorUnit"
+    },
+    "q18": {
+      "type": "TextInput",
+      "label": "Processor Amount",
+      "dbid": "processorAmount",
+      "validationType": "string"
+    },
+    "q19": {
+      "type": "MultiChoice",
+      "label": "Packaging Unit",
+      "required": true,
+      "options": ["Bales", "Packing Units"],
+      "dbid": "processorPackagingUnit"
+    },
+    "q20": {
+      "type": "TextInput",
+      "label": "Processor: Deviating article name",
+      "dbid": "processorDeviatingArticleName",
+      "validationType": "string"
+    },
+    "q21": {
+      "type": "TextInput",
+      "label": "Processor: Condition",
+      "dbid": "processorCondition",
+      "validationType": "string"
+    }
+  },
+  "Source Invoice": {
+    "q1": {
+      "type": "FileChooser",
+      "label": "Attach Invoice",
+      "dbid": "sourceInvoice"
+    },
+    "q2": {
+      "type": "TextInput",
+      "label": "Invoice number",
+      "required": true,
+      "dbid": "sourceInvoiceNumber",
+      "validationType": "string"
+    },
+    "q3": {
+      "type": "DatePicker",
+      "label": "When attached",
+      "dbid": "sourceInvoiceAttachedDate"
+    },
+    "q4": {
+      "type": "DatePicker",
+      "label": "Invoice date",
+      "dbid": "sourceInvoiceDate"
+    },
+    "q5": {
+      "type": "DatePicker",
+      "label": "Transferred to LexOffice: Date",
+      "required": true,
+      "dbid": "sourceInvoiceTransferredLexOfficeDate"
+    }
+  },
+  "Processor Invoice": {
+    "q1": {
+      "type": "FileChooser",
+      "label": "Attach Invoice",
+      "dbid": "processorInvoice"
+    },
+    "q2": {
+      "type": "TextInput",
+      "label": "Invoice number",
+      "required": true,
+      "dbid": "processorInvoiceNumber",
+      "validationType": "string"
+    },
+    "q3": {
+      "type": "DatePicker",
+      "label": "When attached",
+      "dbid": "processorInvoiceAttachedDate"
+    },
+    "q4": {
+      "type": "DatePicker",
+      "label": "Invoice date",
+      "dbid": "processorInvoiceDate"
+    },
+    "q5": {
+      "type": "DatePicker",
+      "label": "Transferred to LexOffice: Date",
+      "required": true,
+      "dbid": "processorInvoiceTransferredLexOfficeDate"
+    }
+  },
+  "Forwarder Invoicie": {
+    "q1": {
+      "type": "FileChooser",
+      "label": "Attach Invoice",
+      "dbid": "forwarderInvoice"
+    },
+    "q2": {
+      "type": "TextInput",
+      "label": "Invoice number",
+      "required": true,
+      "dbid": "forwarderInvoiceNumber",
+      "validationType": "string"
+    },
+    "q3": {
+      "type": "DatePicker",
+      "label": "When attached",
+      "dbid": "forwarderInvoiceAttachedDate"
+    },
+    "q4": {
+      "type": "DatePicker",
+      "label": "Invoice date",
+      "dbid": "forwarderInvoiceDate"
+    },
+    "q5": {
+      "type": "DatePicker",
+      "label": "Transferred to LexOffice: Date",
+      "required": true,
+      "dbid": "forwarderInvoiceTransferredLexOfficeDate"
+    }
+  },
+  "q234": {
+    "type": "MultiChoice",
+    "label": "Basis For Invoice",
+    "dbid": "basisForInvoice"
+  }
+}

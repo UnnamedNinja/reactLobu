@@ -1,0 +1,40 @@
+{
+  "Tour Information": {
+    "q1": {
+      "type": "TextInput",
+      "label": "Tour Number",
+      "required": true,
+      "readOnly": false,
+      "dbid": "tourNumber",
+      "validationType": "string"
+    },
+    "q2": {
+      "type": "TextInput",
+      "label": "Tour Name",
+      "required": true,
+      "readOnly": false,
+      "dbid": "tourName",
+      "validationType": "string"
+    },
+    "q3": {
+      "type": "TextInput",
+      "label": "Stop Name",
+      "required": true,
+      "readOnly": false,
+      "dbid": "tourStopName",
+      "validationType": "string"
+    },
+    "q4": {
+      "type":"DatePicker",
+      "label": "Start Date",
+      "required": true,
+      "dbid":"tourStartDate"
+    },
+    "q5": {
+      "type":"DatePicker",
+      "label": "End Date",
+      "required": true,
+      "dbid":"tourEndDate"
+    }
+  }
+}

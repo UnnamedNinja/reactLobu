@@ -1,0 +1,293 @@
+{
+  "Basic Data": {
+    "q2": {
+      "type": "DatabaseMultiChoice",
+      "label": "Company",
+      "dbid": "company",
+      "required": true,
+      "method": "getCompanys"
+    },
+    "q3": {
+      "type": "DatabaseMultiChoice",
+      "label": "Group",
+      "dbid": "group",
+      "required": true,
+      "method": "getGroups"
+    },
+    "q4": {
+      "type": "TextInput",
+      "label": "Name1",
+      "required": true,
+      "readOnly": false,
+      "dbid": "Name1",
+      "validationType": "string"
+    },
+    "q5": {
+      "type": "TextInput",
+      "label": "Name2",
+      "required": false,
+      "readOnly": false,
+      "dbid": "Name2",
+      "validationType": "string"
+    },
+    "q0pickddk6": {
+      "type": "LocationPicker",
+      "label": "Address",
+      "required": true,
+      "readOnly": false,
+      "dbid": "address",
+      "validationType": "string"
+    },
+    "q6": {
+      "type": "TextInput",
+      "label": "Street",
+      "required": true,
+      "readOnly": false,
+      "dbid": "street",
+      "validationType": "string"
+    },
+    "q7": {
+      "type": "TextInput",
+      "label": "House number",
+      "required": true,
+      "readOnly": false,
+      "dbid": "houseNumber",
+      "validationType": "string"
+    },
+    "q8": {
+      "type": "TextInput",
+      "label": "Zipcode",
+      "required": true,
+      "readOnly": false,
+      "dbid": "zipcode",
+      "validationType": "string"
+    },
+    "q9": {
+      "type": "TextInput",
+      "label": "City",
+      "required": true,
+      "readOnly": false,
+      "dbid": "city",
+      "validationType": "string"
+    },
+    "q10": {
+      "type": "MultiChoice",
+      "label": "State",
+      "required": true,
+      "options": [
+        "Berlin",
+        "Baden-Wurttemberg",
+        "Bavaria",
+        "Bradenburg",
+        "Bremen",
+        "Hamburg",
+        "Hesse",
+        "Lower Saxony",
+        "Mecklenburg-Vorpomern",
+        "North Rhine Westphalia",
+        "Rhineland-Palatinate",
+        "Saarland",
+        "Saxony",
+        "Saxony-Anhalt",
+        "Schleswig-Holstein",
+        "Thuringia",
+        "Foreign"
+      ],
+      "dbid": "state"
+    },
+    "q11": {
+      "type": "TextInput",
+      "label": "Phone 1",
+      "required": false,
+      "readOnly": false,
+      "dbid": "phone1",
+      "placeholder": "+49",
+      "validationType": "phone"
+    },
+    "q12": {
+      "type": "TextInput",
+      "label": "Phone 2",
+      "required": false,
+      "readOnly": false,
+      "dbid": "phone2",
+      "placeholder": "+49",
+      "validationType": "phone"
+    },
+
+    "sdsg33q18": {
+      "type": "MultiPhoneNumber",
+      "label": "Mobile",
+      "required": false,
+      "dbid": "mobile",
+      "placeholder": "+49",
+      "validationType": "mobilephone"
+    },
+    "q14": {
+      "type": "TextInput",
+      "label": "Fax",
+      "required": false,
+      "readOnly": false,
+      "dbid": "fax",
+      "validationType": "string"
+    },
+    "q15": {
+      "type": "TextInput",
+      "label": "Email",
+      "required": true,
+      "readOnly": false,
+      "dbid": "email",
+      "validationType": "email"
+    },
+    "q": {
+      "type": "Multi",
+      "multiType": "AccountManagerDetails",
+      "entityType": "Account Manager Details",
+      "dbid": "accountManagerDetails"
+    }
+  },
+  "Contract Data": {
+    "q18": {
+      "type": "AlternateInvoiceRecipientInput",
+      "label": "Alternate Invoice Recipient",
+      "required": false,
+      "dbid": "alternateInvoiceRecipient"
+    },
+    "q19": {
+      "type": "MultiChoice",
+      "label": "Billing Cycle",
+      "required": false,
+      "options": ["Weekly", "Monthly", "14 Days", "Daily"],
+      "dbid": "billingCycle"
+    },
+    "q20": {
+      "type": "PaymentCycleMultiChoice",
+      "label": "Payment Cycle",
+      "required": false,
+      "options": ["Immediately", "10-net", "14 net", "30 net", "Upfront", "Other"],
+      "dbid": "paymentCycle",
+      "daysLabel": "Days",
+      "daysDbid": "days"
+    },
+    "q2345": {
+      "type": "FileChooser",
+      "label": "Contract file",
+      "required": false,
+      "dbid": "contractFile"
+    },
+    "q21": {
+      "type": "DatePicker",
+      "label": "Contract Start Date",
+      "dbid": "contractStartDate",
+      "required": false
+    },
+    "q22": {
+      "type": "DatePicker",
+      "label": "Contract End Date",
+      "dbid": "contractEndDate",
+      "required": false
+    },
+    "q23": {
+      "type": "TerminationTimeMultiChoice",
+      "label": "Termination Time",
+      "required": false,
+      "options": ["2 days", "14 days", "30 days", "Other"],
+      "dbid": "terminationTime",
+      "daysLabel": "Termination Days",
+      "daysDbid": "terminationDays"
+    },
+    "q24": {
+      "type": "InvoiceDeliveryMethod",
+      "label": "Invoice Delivery Method",
+      "required": false,
+      "options": ["Email", "Mail"],
+      "dbid": "invoiceDeliveryMethod",
+      "emailLabel": "Invoice Email",
+      "emailDbid": "invoiceEmail"
+    }
+  },
+  "Billing Details": {
+    "q25": {
+      "type": "TextInput",
+      "label": "Debitor Number",
+      "required": false,
+      "readOnly": false,
+      "dbid": "debitorNumber",
+      "validationType": "string"
+    },
+    "q26": {
+      "type": "CheckboxPrefillTextField",
+      "checkboxLabel": "Vat Mandatory",
+      "checkboxDbid": "vatMandatory",
+      "textFieldLabel": "VAT Ex. 19%",
+      "textFieldDbid": "vat",
+      "required": false,
+      "preFill": 19,
+      "validationType": "number"
+    },
+    "q122": {
+      "type": "DatePicker",
+      "label": "Last Billed",
+      "required": false,
+      "dbid": "LastBilled"
+    },
+    "q29": {
+      "type": "MultiChoice",
+      "label": "Currency",
+      "default": "EUR",
+      "required": false,
+      "options": ["USD", "EUR", "CHF"],
+      "dbid": "currency"
+    },
+    "q30": {
+      "type": "DatabaseMultiChoice",
+      "label": "Company Bank",
+      "required": false,
+      "method": "getCompanysFullNames",
+      "dbid": "companyBank"
+    }
+  },
+  "Banking Details": {
+    "q31": {
+      "type": "IbanTextInput",
+      "label": "IBAN",
+      "required": false,
+      "dbid": "iban",
+      "validationType": "iban"
+    },
+    "q33": {
+      "type": "TextInput",
+      "label": "Client number at client",
+      "required": false,
+      "dbid": "clientNumberAtClient",
+      "validationType": "string"
+    },
+    "q34": {
+      "type": "TextInput",
+      "label": "Tax Identification Number",
+      "required": false,
+      "dbid": "taxID",
+      "validationType": "string"
+    },
+    "q35": {
+      "type": "TextInput",
+      "label": "National Tax Number",
+      "required": false,
+      "dbid": "nationalTaxID",
+      "validationType": "string"
+    },
+    "q36": {
+      "type": "TextInput",
+      "label": "Vendor number",
+      "required": false,
+      "dbid": "vendorNumber",
+      "validationType": "string"
+    },
+    "q37": {
+      "type": "TextInput",
+      "label": "Cost Center",
+      "required": false,
+      "dbid": "costCenter",
+      "validationType": "string"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "Person Information": {
+    "q23": {
+      "type": "PersonTypeInput",
+      "label": "Type",
+      "required": true,
+      "options": ["Client K", "Partner"],
+      "dbid": "type",
+      "checkboxLabel": "Account Manager",
+      "checkboxDbid": "isAccountManager"
+    },
+    "q32352vva25": {
+      "type": "MultiChoice",
+      "label": "Salutation",
+      "required": true,
+      "dbid": "salutation",
+      "options": ["Mr", "Mrs", "Dr", "Other Salutation"]
+    },
+    "q56": {
+      "type": "TextInput",
+      "label": "First Name",
+      "required": true,
+      "readOnly": false,
+      "dbid": "firstName",
+      "validationType": "string"
+    },
+    "q6": {
+      "type": "TextInput",
+      "label": "Surname",
+      "required": true,
+      "readOnly": false,
+      "dbid": "surname",
+      "validationType": "string"
+    },
+
+    "q96": {
+      "type": "TextInput",
+      "label": "Position",
+      "required": false,
+      "readOnly": false,
+      "dbid": "position",
+      "validationType": "string"
+    },
+    "q76": {
+      "type": "TextInput",
+      "label": "Department",
+      "required": false,
+      "readOnly": false,
+      "dbid": "department",
+      "validationType": "string"
+    },
+    "q79": {
+      "type": "TextInput",
+      "label": "Phone",
+      "required": false,
+      "readOnly": false,
+      "dbid": "phone",
+      "placeholder": "+49",
+      "validationType": "phone"
+    },
+    "q99": {
+      "type": "TextInput",
+      "label": "Mobile Number",
+      "required": false,
+      "readOnly": false,
+      "dbid": "mobileNumber",
+      "placeholder": "+49",
+      "validationType": "phone"
+    },
+    "q939": {
+      "type": "TextInput",
+      "label": "Fax",
+      "required": false,
+      "readOnly": false,
+      "dbid": "fax",
+      "validationType": "string"
+    },
+    "q979": {
+      "type": "TextInput",
+      "label": "E-mail",
+      "required": false,
+      "readOnly": false,
+      "dbid": "email",
+      "validationType": "email"
+    },
+
+    "q910": {
+      "type": "Comment",
+      "label": "Comments",
+      "required": false,
+      "readOnly": false,
+      "dbid": "comments",
+      "validationType": "string"
+    }
+  }
+}

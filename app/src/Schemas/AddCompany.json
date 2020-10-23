@@ -1,0 +1,274 @@
+{
+  "Basic Data": {
+    "q901": {
+      "type": "TextInput",
+      "label": "Company Code",
+      "required": true,
+      "dbid": "companyCode",
+      "validationType": "string"
+    },
+    "q4": {
+      "type": "TextInput",
+      "label": "Name1",
+      "required": true,
+      "readOnly": false,
+      "dbid": "name1",
+      "validationType": "string"
+    },
+    "q5": {
+      "type": "TextInput",
+      "label": "Name2",
+      "required": false,
+      "readOnly": false,
+      "dbid": "name2",
+      "validationType": "string"
+    },
+    "q6": {
+      "type": "TextInput",
+      "label": "Street",
+      "required": true,
+      "readOnly": false,
+      "dbid": "street",
+      "validationType": "string"
+    },
+    "q7": {
+      "type": "TextInput",
+      "label": "House number",
+      "required": true,
+      "readOnly": false,
+      "dbid": "houseNumber",
+      "validationType": "number"
+    },
+    "q8": {
+      "type": "TextInput",
+      "label": "Zipcode",
+      "required": true,
+      "readOnly": false,
+      "dbid": "zipcode",
+      "validationType": "zipcode"
+    },
+    "q9": {
+      "type": "TextInput",
+      "label": "City",
+      "required": true,
+      "readOnly": false,
+      "dbid": "city",
+      "validationType": "string"
+    },
+    "q26": {
+      "type": "CheckboxPrefillTextField",
+      "checkboxLabel": "Vat Mandatory",
+      "checkboxDbid": "vatMandatory",
+      "textFieldLabel": "VAT Ex. 19%",
+      "textFieldDbid": "vat",
+      "required": false,
+      "preFill": 19,
+      "validationType": "number"
+    },
+    "a3": {
+      "type": "TextInput",
+      "label": "Receipt Number",
+      "required": true,
+      "dbid": "receiptNumber",
+      "validationType": "string"
+    },
+    "q10": {
+      "type": "MultiChoice",
+      "label": "State",
+      "required": true,
+      "options": [
+        "Berlin",
+        "Baden-Wurttemberg",
+        "Bavaria",
+        "Bradenburg",
+        "Bremen",
+        "Hamburg",
+        "Hesse",
+        "Lower Saxony",
+        "Mecklenburg-Vorpomern",
+        "North Rhine Westphalia",
+        "Rhineland-Palatinate",
+        "Saarland",
+        "Saxony",
+        "Saxony-Anhalt",
+        "Schleswig-Holstein",
+        "Thuringia",
+        "Foreign"
+      ],
+      "dbid": "state"
+    },
+    "q11": {
+      "type": "TextInput",
+      "label": "Phone 1",
+      "required": true,
+      "readOnly": false,
+      "dbid": "phone1",
+      "placeholder": "+49",
+      "validationType": "phone"
+    },
+    "q12": {
+      "type": "TextInput",
+      "label": "Phone 2",
+      "required": true,
+      "readOnly": false,
+      "dbid": "phone2",
+      "placeholder": "+49",
+      "validationType": "phone"
+    },
+    "q14": {
+      "type": "TextInput",
+      "label": "Fax",
+      "required": true,
+      "readOnly": false,
+      "dbid": "fax",
+      "validationType": "string"
+    },
+    "q15": {
+      "type": "TextInput",
+      "label": "Email",
+      "required": true,
+      "readOnly": false,
+      "dbid": "email",
+      "validationType": "email"
+    },
+    "q16": {
+      "type": "MultiChoice",
+      "label": "Pin Color",
+      "required": true,
+      "options": ["Red", "Yellow", "Blue", "Green", "Purple"],
+      "dbid": "pinColor"
+    }
+  },
+  "Invoice Data": {
+    "q17": {
+      "type": "TextInput",
+      "label": "Executive Director",
+      "required": true,
+      "readOnly": false,
+      "dbid": "executiveDirector",
+      "validationType": "string"
+    },
+    "00q17": {
+      "type": "TextInput",
+      "label": "Commercial Register Number",
+      "required": true,
+      "readOnly": false,
+      "dbid": "commercialRegisterNumber",
+      "validationType": "string"
+    },
+    "00q19908": {
+      "type": "TextInput",
+      "label": "Commercial Register",
+      "required": true,
+      "readOnly": false,
+      "dbid": "commercialRegister",
+      "validationType": "string"
+    },
+    "q18887097": {
+      "type": "TextInput",
+      "label": "Complementary",
+      "required": true,
+      "readOnly": false,
+      "dbid": "complementary",
+      "validationType": "string"
+    },
+    "q188dd97": {
+      "type": "TextInput",
+      "label": "HRA",
+      "required": true,
+      "readOnly": false,
+      "dbid": "hra",
+      "validationType": "string"
+    },
+    "q1sdf87547097": {
+      "type": "TextInput",
+      "label": "Ust-ID",
+      "required": true,
+      "readOnly": false,
+      "dbid": "ustID",
+      "validationType": "string"
+    },
+    "q1sdf8997t547097": {
+      "type": "TextInput",
+      "label": "Tax Number",
+      "required": true,
+      "readOnly": false,
+      "dbid": "taxNumber",
+      "validationType": "string"
+    },
+    "q1sokoko547097": {
+      "type": "Website",
+      "label": "Website",
+      "required": true,
+      "readOnly": false,
+      "dbid": "website",
+      "validationType": "website"
+    },
+    "q1sdf87oplsj097": {
+      "type": "logo",
+      "label": "Logo",
+      "dbid": "logo",
+      "required": true,
+      "readOnly": false,
+      "validationType": "logo"
+    }
+  },
+  "Banking Details": {
+    "q33r": {
+      "type": "DatabaseMultiChoice",
+      "label": "Bank",
+      "required": false,
+      "method": "getBanks",
+      "dbid": "bank"
+    },
+    "q3dfa0": {
+      "type": "TextInput",
+      "label": "Dtaus No.",
+      "required": true,
+      "dbid": "dtausNumber",
+      "validationType": "string"
+    },
+    "q300sdf91": {
+      "type": "TextInput",
+      "label": "Dtaus Path",
+      "required": true,
+      "dbid": "dtausPath",
+      "validationType": "string"
+    },
+    "qsdfsdf230": {
+      "type": "TextInput",
+      "label": "SEPA No.",
+      "required": true,
+      "dbid": "sepaNumber",
+      "validationType": "string"
+    },
+    "q234sDs0091": {
+      "type": "TextInput",
+      "label": "SEPA",
+      "required": true,
+      "dbid": "sepa",
+      "validationType": "string"
+    },
+    "q30DFA091": {
+      "type": "TextInput",
+      "label": "SEPA Path",
+      "required": true,
+      "dbid": "sepaPath",
+      "validationType": "string"
+    },
+    "qss327": {
+      "type": "TextInput",
+      "label": "Usage",
+      "required": true,
+      "dbid": "usage",
+      "validationType": "string"
+    },
+    "qs35c3s327": {
+      "type": "TextInput",
+      "label": "Converter",
+      "required": true,
+      "dbid": "converter",
+      "validationType": "string"
+    }
+  }
+}
